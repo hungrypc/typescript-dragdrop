@@ -1,42 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>ProjectManager</title>
-    <link rel="stylesheet" href="app.css" />
-    <script src="dist/app.js" defer></script>
-  </head>
-  <body>
-    <template id="project-input">
-      <form>
-        <div class="form-control">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ProjectManager</title>
+  <link rel="stylesheet" href="app.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <script src="dist/app.js" defer></script>
+</head>
+
+<body>
+  <template id="project-input">
+    <div class=" ui container">
+      <form class="ui large form">
+        <div class="form-control field">
           <label for="title">Title</label>
-          <input type="text" id="title" />
+          <input type="text" id="title" autocomplete="off"/>
         </div>
-        <div class="form-control">
+        <div class="form-control field">
           <label for="description">Description</label>
-          <textarea id="description" rows="3"></textarea>
+          <textarea id="description" rows="3" autocomplete="off"></textarea>
         </div>
-        <div class="form-control">
+        <div class="form-control field">
           <label for="people">People</label>
-          <input type="number" id="people" step="1" min="0" max="10" />
+          <input type="number" id="people" step="1" min="0" max="10" autocomplete="off" />
         </div>
-        <button type="submit">ADD PROJECT</button>
+        <button type="submit" class="ui button fluid primary">ADD PROJECT</button>
       </form>
-    </template>
-    <template id="single-project">
-      <li></li>
-    </template>
-    <template id="project-list">
-      <section class="projects">
-        <header>
-          <h2></h2>
-        </header>
-        <ul></ul>
-      </section>
-    </template>
-    <div id="app"></div>
-  </body>
+    </div>
+  </template>
+  <template id="single-project">
+    <li></li>
+  </template>
+  <template id="project-list">
+    <section class="projects">
+      <header>
+        <h2></h2>
+      </header>
+      <ul></ul>
+    </section>
+  </template>
+  <br/>
+  <div class="ui container">
+    <div class="ui pointing menu">
+      <a class="active item">
+        Home
+      </a>
+      <a class="item">
+        Messages
+      </a>
+      <a class="item">
+        Friends
+      </a>
+      <div class="right menu">
+        <div class="item">
+          <div class="ui transparent icon input">
+            <input type="text" placeholder="Search...">
+            <i class="search link icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui segment">
+      <div id="app"></div>
+    </div>
+  </div>
+</body>
+
 </html>
