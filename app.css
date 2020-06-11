@@ -63,24 +63,25 @@ button:active {
 
 .projects {
   margin: 1rem;
-  border: 1px solid #ff0062;
+  width: 50%;
+  /* border: 1px solid #ff0062; */
 }
 
-.projects header {
+/* .projects header {
   background: #ff0062;
   height: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-#finished-projects {
+/* #finished-projects {
   border-color: #0044ff;
-}
+} */
 
-#finished-projects header {
+/* #finished-projects header {
   background: #0044ff;
-}
+} */
 
 .projects h2 {
   margin: 0;
@@ -99,14 +100,14 @@ button:active {
   margin: 1rem;
 }
 
-.projects li h2 {
+/* .projects li h2 {
   color: #ff0062;
   margin: 0.5rem 0;
-}
+} */
 
-#finished-projects li h2 {
+/* #finished-projects li h2 {
   color: #0044ff;
-}
+} */
 
 .projects li h3 {
   color: #575757;
@@ -123,6 +124,12 @@ button:active {
 
 #finished-projects .droppable {
   background: #d6e1ff;
+}
+
+#projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* #user-input {

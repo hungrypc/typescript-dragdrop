@@ -38,9 +38,11 @@
   <template id="project-list">
     <section class="projects">
       <header>
-        <h2></h2>
+        <h2 class="ui inverted header block top attached"></h2>
       </header>
-      <ul></ul>
+      <div class="ui segment">
+        <ul></ul>
+      </div>
     </section>
   </template>
   <br/>
@@ -49,12 +51,12 @@
       <a class="active item">
         Home
       </a>
-      <a class="item">
+      <!-- <a class="item">
         Messages
       </a>
       <a class="item">
         Friends
-      </a>
+      </a> -->
       <div class="right menu">
         <div class="item">
           <div class="ui transparent icon input">
@@ -66,6 +68,8 @@
     </div>
     <div class="ui segment">
       <div id="app"></div>
+      <br/>
+      <div id="projects-container"></div>
     </div>
   </div>
 </body>
