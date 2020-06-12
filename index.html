@@ -18,7 +18,7 @@
       <form class="ui large form">
         <div class="form-control field">
           <label for="title">Title</label>
-          <input type="text" id="title" autocomplete="off"/>
+          <input type="text" id="title" autocomplete="off" />
         </div>
         <div class="form-control field">
           <label for="description">Description</label>
@@ -33,19 +33,21 @@
     </div>
   </template>
   <template id="single-project">
-    <li></li>
+    <li class="ui segment raised">
+      <h2></h2>
+      <h3></h3>
+      <p></p>
+    </li>
   </template>
   <template id="project-list">
-    <section class="projects">
+    <section class="projects ui segment">
       <header>
-        <h2 class="ui inverted header block top attached"></h2>
+        <h2 class="ui header block top attached"></h2>
       </header>
-      <div class="ui segment">
-        <ul></ul>
-      </div>
+      <ul></ul>
     </section>
   </template>
-  <br/>
+  <br />
   <div class="ui container">
     <div class="ui pointing inverted menu">
       <a class="active item">
@@ -68,7 +70,7 @@
     </div>
     <div class="ui segment">
       <div id="app"></div>
-      <br/>
+      <br />
       <div id="projects-container"></div>
     </div>
   </div>
