@@ -119,11 +119,11 @@ button:active {
 }
 
 .droppable {
-  background: #ffe3ee;
+  background: #ffe3ee !important;
 }
 
 #finished-projects .droppable {
-  background: #d6e1ff;
+  background: #d6e1ff !important;
 }
 
 #projects-container {
